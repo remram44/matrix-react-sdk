@@ -139,7 +139,7 @@ limitations under the License.
 .mx_RoomSubList_scroll {
     /* let rooms list grab as much space as it needs (auto),
        potentially overflowing and showing a scrollbar */
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     padding: 0 8px;
 }
 

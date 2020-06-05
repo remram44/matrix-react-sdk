@@ -419,10 +419,12 @@ export default class RoomSubList extends React.PureComponent {
     };
 
     setHeight = (height) => {
+        /*
         if (this._subList.current) {
             this._subList.current.style.height = toPx(height);
         }
         this._updateLazyRenderHeight(height);
+        */
     };
 
     _updateLazyRenderHeight(height) {
@@ -453,7 +455,7 @@ export default class RoomSubList extends React.PureComponent {
         if (len) {
             if (isCollapsed) {
                 // no body
-            } else if (this._canUseLazyListRendering()) {
+            } else if (false && this._canUseLazyListRendering()) {
                 content = (
                     <IndicatorScrollbar ref={this._scroller} className="mx_RoomSubList_scroll" onScroll={this._onScroll}>
                         <LazyRenderList
